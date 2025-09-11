@@ -10,4 +10,4 @@ RUN pnpm install
 COPY web/ .
 
 EXPOSE 3000
-CMD ["pnpm", "dev", "--host"]
+CMD ["pnpm", "dev"]

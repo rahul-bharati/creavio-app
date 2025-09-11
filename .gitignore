@@ -61,9 +61,3 @@ vendor/
 # Temporary files
 tmp/
 temp/
-
-# Docker
-Dockerfile*
-docker-compose*.yml
-.dockerignore
-*.dockerfile

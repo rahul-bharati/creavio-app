@@ -1,0 +1,43 @@
+name: "ADR: Architecture Decision Record"
+description: "Propose of record a key technical/architectural decision made along with its context and consequences."
+labels: ["ADR", "documentation"]
+body:
+  - type: "input"
+    id: "title"
+    attributes:
+      label: "Title"
+      description: "A short, descriptive title for the decision."
+      placeholder: "e.g. ADR-005: Broker Choices"
+      required: true
+  - type: "textarea"
+    id: "context"
+    attributes:
+      label: "Context"
+      description: "What problem are we solving? Why is a decision needed?"
+      placeholder: "Describe the issue or problem that requires a decision"
+      required: true
+  - type: "textarea"
+    id: "decision"
+    attributes:
+      label: "Decision"
+      description: "Detail the decision that has been made."
+      placeholder: "The actual choice made (Go vs Node.js, Kafka vs NATS, etc)."
+      required: true
+  - type: "textarea"
+    id: "consequences"
+    attributes:
+      label: "Consequences"
+      description: "Explain the implications and consequences of the decision."
+      placeholder: "Positive and negative impacts of this decision."
+      required: true
+  - type: "dropdown"
+    id: "status"
+    attributes:
+      label: Status
+      options:
+        - Draft
+        - Accepted
+        - Superseded
+        - Rejected
+    validations:
+      required: true

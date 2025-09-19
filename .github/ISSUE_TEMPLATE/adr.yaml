@@ -1,5 +1,5 @@
 name: "ADR: Architecture Decision Record"
-description: "Propose of record a key technical/architectural decision made along with its context and consequences."
+description: "Propose or record a key technical/architectural decision made along with its context and consequences."
 labels: ["ADR", "documentation"]
 body:
   - type: "input"

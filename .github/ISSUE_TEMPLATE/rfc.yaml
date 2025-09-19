@@ -61,8 +61,8 @@ body:
           value: "approved"
         - label: "Rejected"
           value: "rejected"
-        - value: "Superseded"
-          label: "Superseded"
+        - label: "Superseded"
+          value: "Superseded"
       default: "draft"
     validations:
       required: true

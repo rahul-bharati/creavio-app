@@ -63,4 +63,4 @@ while enjoying modern features — with less intrusion.
 - **Deployment & Ops**: Load Balancer for HA, CI/CD pipelines, monitoring & logging for observability.
 
 
-See [ARCHITECTURE.md](./docs/architechture/README.md) for more details.
+See [ARCHITECTURE.md](./docs/architecture/README.md) for more details.

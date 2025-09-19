@@ -16,7 +16,7 @@ This project is structured into several key components to ensure modularity and 
     - API Integration: Communicates with backend services via RESTful APIs.
 - Services:
   - API Gateway: Handles incoming requests and routes them to the appropriate microservice.
-  - Authentication Service: Manages user authentication and authorization
+  - Authentication Service: Manages user authentication and authorization.
   - User Service: Manages user profiles and related data.
   - Chat Service: Handles real-time messaging and chat functionalities.
   - Notification Service: Manages notifications and alerts for users.

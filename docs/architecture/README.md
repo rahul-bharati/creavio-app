@@ -4,8 +4,8 @@
 
 This project is structured into several key components to ensure modularity and maintainability. Below is an overview of the architecture:
 
-- Backend (GoLang)
-    - API Gateway: One Entry point for all requests.
+- Backend (Go)
+    - API Gateway: One entry point for all requests.
     - Microservices: Each service handles a specific business function.
     - Database: Database per service design for data isolation.
     - Authentication Service: Manages user authentication and authorization.
@@ -88,7 +88,7 @@ V1.0
                                 +---------------------+
                                 | Content Moderation  |
                                 +---------------------+
-    
+
 ```
 
 ## Relevant ADRs and RFCs

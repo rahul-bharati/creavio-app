@@ -49,12 +49,12 @@ while enjoying modern features — with less intrusion.
 - **Database**: PostgreSQL for reliable data storage.
 - **Real-time Communication**: WebRTC and WebSockets for low-latency interactions.
 - **Storage**: Object storage (e.g., Cloudflare R2, DigitalOcean Spaces) for media
-- **Authentication**: OAuth 2.0 and JWT for secure user authentication using Keycloak or third party providers like Auth0 or Firebase auth.
+- **Authentication**: OAuth 2.0 and JWT for secure user authentication using Keycloak or third-party providers like Auth0 or Firebase auth.
 - **CI/CD**: GitHub Actions for automated testing and deployment.
 - **Monitoring**: Prometheus, Opentelemetry and Grafana for system monitoring and alerting.
 - **Version Control**: Git for source code management.
 
-> The techstack decisions are not final and may evolve as the project progresses and any finalization will be based on ADRs and RFCs
+> The tech stack decisions are not final and may evolve as the project progresses and any finalization will be based on ADRs and RFCs.
 
 ## Architecture
 

@@ -4,3 +4,4 @@ This directory contains the Architecture Decision Records (ADRs) for this projec
 ### ADRs List
 - [ADR 001: Language and Framework Selection](ADR-001-language-and-framework-selection.md)
 - [ADR 002: Application Architecture](ADR-002-application-architecture.md)
+- [ADR 003: Database Strategy](ADR-003-database-strategy.md)

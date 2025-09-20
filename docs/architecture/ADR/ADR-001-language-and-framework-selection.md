@@ -50,7 +50,7 @@ The stack should support security, performance, and easy maintenance, and be acc
 Mobile tech (Flutter/React Native/Capacitor) will be decided after web MVP stabilizes.
 
 ## References
-- This ADR influences: ADR 002 (Application Architecture)
+- This ADR influences: [ADR 002: Application Architecture](./ADR-002-application-architecture.md)
 - See: [Next.js](https://nextjs.org/) | [Go](https://go.dev/)
 
 ---

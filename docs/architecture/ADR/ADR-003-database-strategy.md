@@ -46,7 +46,7 @@ After evaluating the options, we have decided to use **PostgreSQL** as our datab
 MongoDB was rejected because strong transactional consistency is critical for Creavio (e.g., message delivery, payment flows).
 We will implement per-service databases to ensure clear separation of data and easier management of service-specific data models. This approach aligns well with our microservices architecture and allows for better scalability and maintainability.
 
-## Consequences
+
 
 ## Consequences
 - **Positive**: Clear data boundaries per service; enables independent scaling and schema evolution; aligns with microservices autonomy.

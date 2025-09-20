@@ -31,17 +31,22 @@ This project is structured into several key components to ensure modularity and 
   - Role-Based Access Control (RBAC) Service: Manages user roles and permissions.
   - Content Moderation Service: Handles content filtering and moderation.
 - Deployment & Infrastructure
-    - Containerization: Using Docker for containerizing services.
-    - Orchestration: Kubernetes for managing containerized applications.
-    - CI/CD Pipeline: Automated build, test, and deployment processes.
-    - Cloud Provider: Hosting on Digital Ocean.
-    - Messaging Queue: RabbitMQ/NATS for asynchronous communication between services.
-    - Monitoring: Prometheus, OpenTelemetry and Grafana for monitoring and alerting.
-    - Logging: ELK Stack (Elasticsearch, Logstash, Kibana) for centralized logging.
-    - CDN: Cloudflare for content delivery and caching.
+  - Containerization: Using Docker for containerizing services.
+  - Orchestration: Kubernetes for managing containerized applications.
+  - CI/CD Pipeline: Automated build, test, and deployment processes.
+  - Cloud Provider: Hosting on Digital Ocean.
+  - Messaging Queue: RabbitMQ/NATS for asynchronous communication between services.
+  - Monitoring: Prometheus, OpenTelemetry and Grafana for monitoring and alerting.
+  - Logging: ELK Stack (Elasticsearch, Logstash, Kibana) for centralized logging.
+  - CDN: Cloudflare for content delivery and caching.
 
 
 ## Diagram
+
+V1.0
+
+[![Architecture Diagram](../diagrams/architecture/creavio-app-architecture-v1.png)](../diagrams/architecture/creavio-app-architecture-v1.svg)
+
 
 ```plaintext
 +---------------------+        +---------------------+        +---------------------+

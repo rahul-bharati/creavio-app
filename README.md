@@ -30,7 +30,7 @@ paused development because I couldn’t settle on the right path.
 Its mission is to empower communities and organizations to fully own their data  
 while enjoying modern features — with less intrusion.
 
-## Features 
+## Features
 - **Privacy-first**: End-to-end encryption for chats, voice, video, and streams.
 - **Community-driven**: Open-source and user feedback-driven development.
 - **Multi-modal communication**: Seamless integration of chat, voice, video, and streaming

@@ -46,7 +46,7 @@ After evaluating the options, we have decided to adopt a **Microservices Archite
 ## References
 
 - Builds on learnings from [ADR 001: Language and Framework Selection](./ADR-001-language-and-framework-selection.md)
-- This ADR influences: ADR 003: Database Selection
+- This ADR influences: [ADR 003: Database Strategy](./ADR-003-database-strategy.md)
 - [Microservices Architecture](https://martinfowler.com/articles/microservices.html) by Martin Fowler
 - [Building Microservices](https://www.oreilly.com/library/view/building-microservices/9781491950340/) by Sam Newman
 - [The Twelve-Factor App](https://12factor.net/) - Best practices for building modern web applications

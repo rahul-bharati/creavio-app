@@ -1,0 +1,68 @@
+name: "RFC: Request for Comments"
+description: "Suggest a subsystem, feature design or enhancement for a project"
+labels: ["rfc", "documentation"]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: "Title"
+      description: "A short, descriptive title for your RFC."
+      placeholder: " e.g. RFC-002: Deployment & Environments"
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: "Motivation"
+      description: "What is the reason for this RFC? What problem does it solve? Why is this important?"
+      placeholder: " e.g. We need a way to manage different deployment environments..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "Proposal"
+      description: "Describe your proposed solution in detail. Include diagrams, examples, and alternatives considered."
+      placeholder: " e.g. I propose we use Docker for containerization..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+        label: "Alternatives Considered"
+        description: "Describe any alternative solutions you considered and why you did not choose them."
+        placeholder: " e.g. We considered using VMs but they are too resource-intensive..."
+    validations:
+        required: false
+
+  - type: textarea
+    id: impact
+    attributes:
+      label: "Impact"
+      description: "What are the potential impacts of this RFC? Consider performance, security, and user experience."
+      placeholder: " e.g. This will improve deployment speed by 50%..."
+    validations:
+      required: false
+
+  - type: dropdown
+    id: status
+    attributes:
+      label: "Status"
+      description: "Select the current status of this RFC."
+      options:
+        - label: "Draft"
+          value: "draft"
+        - label: "Under Review"
+          value: "under_review"
+        - label: "Approved"
+          value: "approved"
+        - label: "Rejected"
+          value: "rejected"
+        - label: "Superseded"
+          value: "Superseded"
+      default: "draft"
+    validations:
+      required: true

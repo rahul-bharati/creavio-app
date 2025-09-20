@@ -1,0 +1,48 @@
+name: "Bug Report"
+description: "Report unexpected behavior or issues in the project."
+labels: ["bug"]
+body:
+  - type: "input"
+    id: "title"
+    attributes:
+      label: "Title"
+      description: "A brief summary of the bug."
+      placeholder: "e.g., Application crashes on startup"
+    validations:
+      required: true
+
+  - type: "textarea"
+    id: "description"
+    attributes:
+      label: "Description"
+      description: "A detailed description of the bug."
+      placeholder: "Describe the issue in detail..."
+    validations:
+      required: true
+
+  - type: "textarea"
+    id: "steps_to_reproduce"
+    attributes:
+      label: "Steps to Reproduce"
+      description: "List the steps to reproduce the bug."
+      placeholder: "1. Step one\n2. Step two\n3. Step three"
+    validations:
+      required: true
+
+  - type: "textarea"
+    id: "expected_behavior"
+    attributes:
+      label: "Expected Behavior"
+      description: "What you expected to happen."
+      placeholder: "Describe what you expected to happen..."
+    validations:
+      required: true
+
+  - type: "input"
+    id: "environment"
+    attributes:
+      label: "Environment"
+      description: "Details about your environment (e.g., OS, browser version)."
+      placeholder: "e.g., Windows 10, Chrome 89"
+    validations:
+      required: false

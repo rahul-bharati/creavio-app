@@ -30,11 +30,11 @@ The goal is to balance **developer productivity** with **scalability and observa
 
 ### Communication Patterns
 
-| Channel                     | Technology Choice   | Scope / Usage                                    | Contract Definition      | Notes |
-|-----------------------------|---------------------|--------------------------------------------------|--------------------------|-------|
-| **External Requests**       | REST over HTTPS     | All traffic entering via API Gateway             | OpenAPI (Swagger)        | Standardized, client-friendly |
-| **Internal Requests**       | gRPC over HTTP/2    | Low-latency service-to-service calls             | Protocol Buffers (.proto)| Binary, fast, strongly typed |
-| **Asynchronous Events**     | NATS JetStream      | Pub/Sub, event streaming, decoupled workflows    | CloudEvents spec + Protobuf | High throughput, persistent, replayable |
+| Channel                  | Technology Choice   | Scope / Usage                              | Contract Definition           | Notes                                   |
+|--------------------------|---------------------|--------------------------------------------|------------------------------|-----------------------------------------|
+| **External Requests**    | REST over HTTPS     | All traffic entering via API Gateway       | OpenAPI (Swagger)            | Standardized, client-friendly           |
+| **Internal Requests**    | gRPC over HTTP/2    | Low-latency service-to-service calls       | Protocol Buffers (.proto)    | Binary, fast, strongly typed            |
+| **Asynchronous Events**  | NATS JetStream      | Pub/Sub, event streaming, decoupled workflows | CloudEvents spec + Protobuf   | High throughput, persistent, replayable |
 
 ### Supporting Decisions
 

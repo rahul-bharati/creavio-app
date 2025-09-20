@@ -47,7 +47,7 @@ The stack should support security, performance, and easy maintenance, and be acc
 - **Frontend:** React is base for Next.js; Flutter requires learning a new ecosystem.
 
 ## Future Considerations
-Mobile tech (Flutter/React Native/Capacitor) will be decided after web MVP stabilizes.# ADR 001: Language and Framework Selection for Creavio
+Mobile tech (Flutter/React Native/Capacitor) will be decided after web MVP stabilizes.
 
 ## References
 - This ADR influences: ADR 002 (Application Architecture)

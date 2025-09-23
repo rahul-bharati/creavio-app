@@ -1,3 +1,3 @@
 export default function Home() {
-  return <h1>Hello Creavio</h1>;
+  return <h1>Hello Creavio - Secure chats</h1>;
 }

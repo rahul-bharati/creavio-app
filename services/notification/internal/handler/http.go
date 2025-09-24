@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/creavio/services/notification/internal/repository"
+	"github.com/rahul-bharati/creavio-app/services/notification/internal/repository"
 )
 
 type NotificationHandler struct {

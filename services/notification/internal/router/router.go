@@ -3,7 +3,7 @@ package router
 import (
 	"net/http"
 
-	"github.com/creavio/services/notification/internal/handler"
+	"github.com/rahul-bharati/creavio-app/services/notification/internal/handler"
 )
 
 func New(h *handler.NotificationHandler) *http.ServeMux {

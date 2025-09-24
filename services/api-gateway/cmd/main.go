@@ -5,9 +5,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/creavio/services/api-gateway/internal/client"
-	"github.com/creavio/services/api-gateway/internal/handler"
-	"github.com/creavio/services/api-gateway/internal/router"
+	"github.com/rahul-bharati/creavio-app/services/api-gateway/internal/client"
+	"github.com/rahul-bharati/creavio-app/services/api-gateway/internal/handler"
+	"github.com/rahul-bharati/creavio-app/services/api-gateway/internal/router"
 )
 
 func main() {

@@ -1,6 +1,6 @@
 package service
 
-import "github.com/creavio/services/user/internal/repository"
+import "github.com/rahul-bharati/creavio-app/services/user/internal/repository"
 
 type UserService struct {
 	repo repository.UserRepository

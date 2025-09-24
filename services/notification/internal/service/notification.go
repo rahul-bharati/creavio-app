@@ -1,6 +1,6 @@
 package service
 
-import "github.com/creavio/services/notification/internal/repository"
+import "github.com/rahul-bharati/creavio-app/services/notification/internal/repository"
 
 type NotificationService struct {
 	repo repository.NotificationRepository

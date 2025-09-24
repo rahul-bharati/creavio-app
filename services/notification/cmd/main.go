@@ -4,16 +4,16 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/creavio/services/notification/internal/handler"
-	"github.com/creavio/services/notification/internal/repository/memory"
-	"github.com/creavio/services/notification/internal/router"
-	"github.com/creavio/services/notification/internal/service"
+	"github.com/rahul-bharati/creavio-app/services/notification/internal/handler"
+	"github.com/rahul-bharati/creavio-app/services/notification/internal/repository/memory"
+	"github.com/rahul-bharati/creavio-app/services/notification/internal/router"
+	"github.com/rahul-bharati/creavio-app/services/notification/internal/service"
 )
 
 func main() {
 	repo := memory.NewMemoryNotificationRepository()
 	svc := service.NewNotificationService(repo)
-	h := handler.NewNotificationHandler(svc)
+	h := handler.NewNotificationHandler(repo)
 
 	r := router.New(h)
 

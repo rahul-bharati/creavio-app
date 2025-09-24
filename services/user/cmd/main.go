@@ -4,10 +4,10 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/creavio/services/user/internal/handler"
-	repository "github.com/creavio/services/user/internal/repository/memory"
-	"github.com/creavio/services/user/internal/router"
-	"github.com/creavio/services/user/internal/service"
+	"github.com/rahul-bharati/creavio-app/services/user/internal/handler"
+	repository "github.com/rahul-bharati/creavio-app/services/user/internal/repository/memory"
+	"github.com/rahul-bharati/creavio-app/services/user/internal/router"
+	"github.com/rahul-bharati/creavio-app/services/user/internal/service"
 )
 
 func main() {

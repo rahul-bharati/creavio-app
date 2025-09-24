@@ -3,7 +3,7 @@ package handler
 import (
 	"net/http"
 
-	"github.com/creavio/services/api-gateway/internal/client"
+	"github.com/rahul-bharati/creavio-app/services/api-gateway/internal/client"
 )
 
 type Handler struct {

@@ -3,7 +3,7 @@ package router
 import (
 	"net/http"
 
-	"github.com/creavio/services/user/internal/handler"
+	"github.com/rahul-bharati/creavio-app/services/user/internal/handler"
 )
 
 func New(h *handler.Handler) *http.ServeMux {

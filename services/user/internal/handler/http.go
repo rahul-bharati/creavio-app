@@ -4,12 +4,12 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/creavio/services/user/internal/repository"
-	"github.com/creavio/services/user/internal/service"
+	"github.com/rahul-bharati/creavio-app/services/user/internal/repository"
+	"github.com/rahul-bharati/creavio-app/services/user/internal/service"
 )
 
 type Handler struct {
-	userService repository.UserRepository
+	userService *service.UserService
 }
 
 func NewHandler(handlerService *service.UserService) *Handler {

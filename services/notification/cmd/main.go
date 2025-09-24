@@ -13,7 +13,7 @@ import (
 func main() {
 	repo := memory.NewMemoryNotificationRepository()
 	svc := service.NewNotificationService(repo)
-	h := handler.NewNotificationHandler(repo)
+	h := handler.NewNotificationHandler(svc)
 
 	r := router.New(h)
 

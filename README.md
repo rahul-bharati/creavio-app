@@ -149,7 +149,7 @@ Open the Tilt UI (it prints a URL) and wait for all resources to turn green.
 ### 5) Access the services
 
 - Frontend: [http://localhost:3000](http://localhost:3000)
-- API Gateway: [http://localhost:8080](http://localhost:8080)
+- API Gateway: [http://localhost:8000](http://localhost:8000)
 - User Service: [http://localhost:8001](http://localhost:8001)
 - Notification Service: [http://localhost:8002](http://localhost:8002)
 

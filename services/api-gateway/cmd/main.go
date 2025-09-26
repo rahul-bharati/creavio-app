@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 	"net/http"
+	"os"
 	"time"
 
 	"github.com/rahul-bharati/creavio-app/services/api-gateway/internal/client"
@@ -11,8 +12,8 @@ import (
 )
 
 func main() {
-	notificationURL := "http://localhost:8002/"
-	userURL := "http://localhost:8001/"
+	notificationURL := os.Getenv("NOTIFICATION_SERVICE_URL")
+	userURL := os.Getenv("USER_SERVICE_URL")
 
 	httpClient := &http.Client{Timeout: time.Second * 3}
 
@@ -24,7 +25,7 @@ func main() {
 	mux := router.NewRouter(h)
 
 	addr := ":8000"
-	log.Printf("API Gateway listening on %s (user= %s, notification=%s)", addr, notificationURL, notificationURL)
+	log.Printf("API Gateway listening on %s (user= %s, notification=%s)", addr, userURL, notificationURL)
 
 	if err := http.ListenAndServe(addr, mux); err != nil {
 		log.Fatalf("could not start server: %v", err)

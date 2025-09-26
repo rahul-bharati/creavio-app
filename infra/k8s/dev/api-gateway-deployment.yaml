@@ -22,11 +22,9 @@ spec:
             initialDelaySeconds: 5
           ports:
             - containerPort: 8000
-          env:
-            - name: USER_SERVICE_URL
-              value: http://user-service-dev:8001
-            - name: NOTIFICATION_SERVICE_URL
-              value: http://notification-service-dev::8002
+          envFrom:
+            - configMapRef:
+                name: app-config
 
 ---
 apiVersion: v1

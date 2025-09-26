@@ -1,0 +1,15 @@
+namespace: creavio-dev
+resources:
+  - namespace.yaml
+  - api-gateway-deployment.yaml
+  - notification-service-deployment.yaml
+  - user-service-deployment.yaml
+  - web-deployment.yaml
+
+configMapGenerator:
+  - name: app-config
+    envs:
+      - config.env
+
+generatorOptions:
+  disableNameSuffixHash: false

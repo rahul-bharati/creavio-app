@@ -4,7 +4,6 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/rahul-bharati/creavio-app/services/user/internal/repository"
 	"github.com/rahul-bharati/creavio-app/services/user/internal/service"
 )
 

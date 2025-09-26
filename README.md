@@ -12,6 +12,15 @@ Author: [Rahul Bharati](https://rahulbharati.dev) | Twitter: [@BharatiRahul](htt
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Architecture](#architecture)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [1) Clone the repository](#1-clone-the-repository)
+  - [2) Check your local Kubernetes is ready](#2-check-your-local-kubernetes-is-ready)
+  - [3) Create the dev env files (Kustomize will turn these into a ConfigMap/Secret)](#3-create-the-dev-env-files-kustomize-will-turn-these-into-a-configmapsecret)
+  - [4) Start the dev environment with Tilt](#4-start-the-dev-environment-with-tilt)
+  - [5) Access the services](#5-access-the-services)
+  - [6) Stop the dev environment](#6-stop-the-dev-environment)
+  - [Useful Links](#useful-links)
 
 ---
 
@@ -64,3 +73,99 @@ while enjoying modern features — with less intrusion.
 
 
 See [ARCHITECTURE.md](./docs/architecture/README.md) for more details.
+
+## Getting Started
+
+Run the full stack locally using Docker Desktop’s Kubernetes and Tilt.
+
+### Prerequisites
+
+- **Docker Desktop** (with Kubernetes enabled)  
+  - Install: [Docker Desktop](https://www.docker.com/products/docker-desktop)  
+  - Enable Kubernetes: *Docker Desktop → Settings → Kubernetes → Enable Kubernetes → Apply & Restart*  
+    Docs: https://docs.docker.com/desktop/kubernetes/
+
+
+- **kubectl** (Kubernetes CLI)  
+  -Install: [Kubernetes CLI](https://kubernetes.io/docs/tasks/tools/)
+
+
+- **Tilt** (fast local dev for Kubernetes)  
+  Install: [Tilt](https://docs.tilt.dev/install.html)
+
+
+- **Git**  
+  Install: https://git-scm.com/downloads
+
+> **Windows:** Use **WSL2** (Ubuntu recommended) with Docker Desktop’s WSL integration: [WSL](https://learn.microsoft.com/en-us/windows/wsl/install) + [Docker WSL2](https://learn.microsoft.com/windows/wsl/)
+
+---
+
+### 1) Clone the repository
+
+```bash
+    git clone https://github.com/rahul-bharati/creavio-app.git
+    cd creavio-app
+```
+
+### 2) Check your local Kubernetes is ready
+
+```bash
+    kubectl version --client
+    kubectl get nodes
+```
+You should see your local cluster node in Ready state (Docker Desktop’s built-in cluster).
+
+### 3) Create the dev env files (Kustomize will turn these into a ConfigMap/Secret)
+
+Create `infra/k8s/dev/config.env` (non-secret config):
+
+```env
+    USER_SERVICE_URL=http://creavio-user-service-dev:8001
+    NOTIFICATION_SERVICE_URL=http://creavio-notification-service-dev:8002
+    LOG_LEVEL=debug
+```
+
+Create `infra/k8s/dev/secrets.env` (secret config - **do not commit to git and mappings will be added in secrets.env.example**):
+
+```env
+    JWT_SECRET=change-me
+    DB_PASSWORD=local-dev-password
+```
+**Note:** These files are watched by Tilt; changes will roll out automatically.
+
+### 4) Start the dev environment with Tilt
+
+```bash
+    tilt up
+```
+Tilt will
+- Build the Docker images,
+- Apply the Kubernetes manifests (via Kustomize) into the creavio-dev namespace,
+- Port-forward services so you can hit them from your laptop.
+
+Open the Tilt UI (it prints a URL) and wait for all resources to turn green.
+
+### 5) Access the services
+
+- Frontend: [http://localhost:3000](http://localhost:3000)
+- API Gateway: [http://localhost:8080](http://localhost:8080)
+- User Service: [http://localhost:8001](http://localhost:8001)
+- Notification Service: [http://localhost:8002](http://localhost:8002)
+
+(Port-forwards are defined in `Tiltfile`)
+
+### 6) Stop the dev environment
+
+```bash
+    tilt down
+```
+This removes the Kubernetes resources that Tilt created.
+
+### Useful Links
+- [Tilt Docs](https://docs.tilt.dev/)
+- [Kubernetes Docs](https://kubernetes.io/docs/home/)
+- [Kustomize Docs](https://kustomize.io/)
+- [Docker Desktop Docs](https://docs.docker.com/desktop/)
+
+---

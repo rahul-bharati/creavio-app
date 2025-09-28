@@ -7,3 +7,4 @@ This directory contains the Architecture Decision Records (ADRs) for this projec
 - [ADR 003: Database Strategy](ADR-003-database-strategy.md)
 - [ADR 004: Service Communication and Contracts](ADR-004-service-communication-and-contracts.md)
 - [ADR 005: Orchestration and Dev Environment](ADR-005-orchestration-and-dev-environment.md)
+- [ADR 006: Authentication and Identity](ADR-006-authentication-and-identity.md)

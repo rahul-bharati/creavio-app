@@ -51,7 +51,7 @@ The choice must balance **security, flexibility, developer experience, and resou
   - Built-in support for MFA and passwordless login.
   - Self-hostable with a simple Docker setup.
   - More flexible database options (PostgreSQL, MySQL, etc.) with less overhead
-  - Flexible tenent model for multi-tenant applications.
+  - Flexible tenant model for multi-tenant applications.
 - **Cons:**
   - Smaller community compared to Keycloak.
   - Less enterprise adoption, which may impact long-term support.
